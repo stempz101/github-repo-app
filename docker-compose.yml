@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  github-repo-app:
+    container_name: github-repo-app
+    image: stempz/github-repo-app:1.0.0
+    ports:
+      - '8080:8080'
+    env_file:
+      - .env
